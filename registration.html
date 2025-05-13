@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #151515;
+        }
+        
+        /* Unique Navbar Styles */
+        .fraud-navbar {
+            background: #222;
+            padding: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 20px;
+        }
+
+        .fraud-navbar-title {
+            color: white;
+            margin: 0;
+            padding-left: 20px;
+            font-size: 30px;
+        }
+
+        .fraud-nav-links {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .fraud-nav-links li {
+            margin: 0 15px;
+            position: relative;
+        }
+
+        .fraud-nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        .fraud-nav-links a:hover {
+            color: #6c388c;
+        }
+
+        /* Unique Dropdown Menu */
+        .fraud-dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .fraud-dropdown-content {
+            display: none;
+            position: absolute;
+            background: white;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            min-width: 200px;
+            z-index: 1;
+        }
+
+        .fraud-dropdown-content a {
+            color: black;
+            padding: 10px;
+            display: block;
+            text-decoration: none;
+        }
+
+        .fraud-dropdown-content a:hover {
+            background: #6c388c;
+            color: white;
+        }
+
+        .fraud-dropdown:hover .fraud-dropdown-content {
+            display: block;
+        }
+
+        /* Unique Login/Report Buttons */
+        .fraud-auth-buttons {
+            margin-left: auto;
+        }
+
+        .fraud-auth-buttons a {
+    display: block;
+    padding: 5px 23px;
+    background: #6c388c;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    margin: 10px;
+        }
+        .fraud-auth-buttons a:hover {
+            background: #b4a0c1;
+        }
+    </style>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-image:url(https://static.vecteezy.com/system/resources/previews/031/734/490/non_2x/rear-view-of-a-hacker-in-a-dark-room-with-computers-and-monitors-computer-monitors-in-a-room-with-many-screens-and-monitors-on-the-wall-ai-generated-free-photo.jpg);
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            background: #333;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar h1 {
+            color: white;
+            margin: 0;
+            padding-left: 20px;
+            font-size: 24px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links li {
+            margin: 0 15px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #171716;
+        }
+
+        .blink-button {
+        padding: 10px 20px;
+        font-size: 18px;
+        color: white;
+        background-color: #f39c12;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+        0% { opacity: 1; }
+        50% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+
+        /* Registration Form */
+        .container {
+            /* background: white; */
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(190, 186, 186, 0.934);
+            width: 400px;
+            text-align: inline;
+            margin: 50px auto;
+            color: #f1efef;
+            /* background-image:url(https://i.pinimg.com/736x/85/13/80/85138042bf854564c124b72e7cf3905f.jpg); */
+
+        }
+        
+        h2 {
+            color: #eee4e4;
+            margin-bottom: 15px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px -8px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            border-color: #6c388c;
+            outline: none;
+        }
+
+        .gender-label {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #6c388c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #cec3d5;
+        }
+
+        .text-color_decoration {
+            text-decoration: none;
+            text-decoration-color: none;
+        }
+    </style>
+</head>
+<body>
+
+      <!-- Unique Navbar -->
+    <div class="fraud-navbar">
+        <h1 class="fraud-navbar-title">FRAUD SCAM DETECTOR</h1>
+        <ul class="fraud-nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li class="fraud-dropdown">
+                <a href="https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2078077">Fraud Awareness </a>
+                <!-- <div class="fraud-dropdown-content">
+                    <a href="#">Common Scams</a>
+                    <a href="#">How to Spot Fraud</a>
+                    <a href="#">Online Safety Tips</a>
+                </div> -->
+            </li>
+            <li><a href="home.html">Check Scam</a></li>
+            <li><a href="#">Legal Resources</a></li>
+            <li><a href="https://indianexpress.com/about/online-fraud/">News & Updates</a></li>
+            <li><a href="">Contact Us</a></li>
+            <!-- <li class="fraud-dropdown">
+                <a href="#">Account ▼</a>
+                <div class="fraud-dropdown-content">
+                    <a href="#">Login</a>
+                    <a href="#">Register</a>
+                </div>
+            </li> -->
+        </ul>
+        <div class="fraud-auth-buttons">
+            <a href="login.html">Login</a>
+            <a href="https://cybercrime.gov.in/webform/Crime_NodalGrivanceList.aspx" class="blink-button" style="background-color:rgb(139,0,0);">Report Fraud</a>
+            
+        </div>
+    </div>
+
+    <!-- Registration Form -->
+    <div class="container">
+        <center>
+        <h2>REGISTRATION FORM</h2>
+        </center>
+        <form action="submit.html" method="POST">
+            <label for="Full_Name"> FULL NAME : </label>
+            <input type="text" name="fullname" id="Full_Name" placeholder="ENTER YOUR NAME" required>
+            <label for="Enter_Your_User_Name"> USERNAME : </label>
+            <input type="text" name="username" id="Enter_Your_User_Name" placeholder="USERNAME" required>
+            <label for="Email_Address"> EMAIL ADDRESS : </label>
+            <input type="email" name="email" id="Email_Address" placeholder="EMAIL ADDRESS" required>
+            <label for="Username_Password">  PHONE NUMBER: </label>
+            <input type="password" name="password" id="Username_Password" placeholder="PHONE NUMBER" required>
+            <label for="primery_mobile_number"> ALTERNATE NUMBER: </label>
+            <input type="tel" name="phone" placeholder="ENTER YOUR ALTERNATE NUMBER" required>
+            <label for="Username_Password"> ENTER YOUR PASSWORD :- </label>
+            <input type="password" name="password" id="Username_Password" placeholder="ENTER YOUR PASSWORD" required>
+            <label for="Verify_Your_Password">ENTER YOUR AADHAAR NO : </label>
+            <input type="password" name="confirm_password" id="Verify_Your_Password" placeholder="AADHAAR NO" required>
+            
+            
+            <label>DATE OF BIRTH:</label>
+            <input type="date" name="dob" required><br><br>
+            <label>GENDER:</label>
+            <div class="gender-label">
+                <input type="radio" name="gender" value="Male" required> Male
+                <input type="radio" name="gender" value="Female"> Female
+                <input type="radio" name="gender" value="Other"> Other
+                <br>
+            </div>
+            <label for="Enter_Your_Address"> ENTER YOUR ADDRESS: </label>
+            <textarea name="address" id="Enter_Your_Address" placeholder="Enter Address" rows="3" required></textarea>
+            <label for="photo"> AADHAAR CARD:</label>
+            <input type="file" id="photo" name="recent photo">
+            <label for="photo"> PAN CARD:</label>
+            <input type="file" id="photo" name="recent photo">
+            
+            
+
+            <label>NATIONALITY:</label>
+            <select name="nationality" required>
+                <option value="">SELECT NATIONALITY </option>
+                <option value="Indian">Indian</option>
+                <option value="American">American</option>
+                <option value="British">British</option>
+                <option value="Canadian">Canadian</option>
+                <option value="Australian">Australian</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label>STATE/PROVICE:</label>
+            <select name="state" required>
+                <option value="">SELECT STATE/ PROVINCE</option>
+                <option value="California">California</option>
+                <option value="Texas">Texas</option>
+                <option value="Ontario">Ontario</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="New South Wales">New South Wales</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label>CITY:</label>
+            <select name="city" required>
+                <option value="">SELECT CITY</option>
+                <option value="New York">New York</option>
+                <option value="Los Angeles">Los Angeles</option>
+                <option value="Toronto">Toronto</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Sydney">Sydney</option>
+                <option value="Other">Other</option>
+            </select>
+
+             <label for="Enter_Your_Zipcode"> ENTER YOUR ZIP CODE: </label>
+            <input type="text" name="zipcode" id="Enter_Your_Zipcode" placeholder="ZIP CODE" required>
+
+            <label>COUNTRY:</label>
+            <select name="country" required>
+                <option value="">SELECT COUNTRY:</option>
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+                <option value="Canada">Canada</option>
+                <option value="Australia">Australia</option>
+            </select>
+            <label for="photo"> BANK DETAILS:</label>
+            <input type="file" id="photo" name="recent photo">
+            <center>
+            <input type="checkbox" name="terms" > Agree to the <a class="text-color_decoration" href="termandcond.html" target="_blank">Terms & Conditions</a>
+            </center>
+            <br>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+</body>
+</html>
