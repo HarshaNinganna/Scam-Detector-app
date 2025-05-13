@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="20">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Fraud Scam Detector</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/128/6230/6230599.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: auto;
+            padding: auto;
+            background-color: #0c0c0c;
+            text-align: center;
+            color: white;
+            
+        }
+        
+        header {
+            background: #6c388c;
+            color: white;
+            padding: 20px;/*in header violet boxlength*/
+            text-align: center;
+            border-radius: 20px;
+        }
+        
+        .fraud-list {
+            background: #0c0c0c;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: right;
+            text-align: start;
+        }
+       
+
+        
+        .fraud-list ul {
+            list-style-type: none;/*it show like point*/
+            
+        }
+        
+        .fraud-list li {
+            padding: 15px;
+            border-bottom: 1px solid #0c0c0c;
+            display: inline;
+            align-items: center;
+
+        }
+        
+       
+        
+        .cta {
+            margin: 20px;
+            padding: 20px;
+            background: #6c388c;
+            color: white;
+            border-radius: 20px;
+            width: 1400px;
+            
+        } 
+        .cta a{
+            text-decoration: none;
+            cursor: pointer;
+            border-radius: 5px;
+   
+        }
+        
+         
+        button {
+            padding: 10px 20px;
+            background: #0c0c0c;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            color: #6c388c;
+            font-weight: bold;
+        }
+
+        
+        .logo-container {
+        display: inline-block;
+        
+        gap: 10px; /* Adds space between logo and text */
+        border-radius: 20px;
+        }
+        nav a {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #6c388c;
+        color: white;
+        text-decoration: none; /* Removes underline */
+        border: none;
+        border-radius: 20px;
+        margin: 5px;
+        cursor: pointer;
+        text-align: center;
+        }
+
+        
+        .fraud-items {
+            display: flex;
+            flex-wrap: wrap;
+            /* gap: 20px; */
+            justify-content: space-between;/*it will give space*/
+        }
+    
+        .fraud-item {
+            width: 48%;
+            margin-bottom: 20px;
+        }
+    
+        .fraud-item img {
+            width: 50%;
+            height: auto;
+        }
+        
+    
+    
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container" >
+        <img id="mylogo" src="C:\Users\pavit\OneDrive\Pictures\Saved Pictures\logo.jpg" alt="Fraud Scam Detector Logo"width="200" height="200" style="border-radius: 100px;">
+        <h1>Fraud Scam Detector</h1>
+        
+        </div>
+        <p>Protect yourself from digital frauds and scams</p>
+    </header>
+    <nav>
+        <a href="#home" >HOME</a>
+        
+        <a href="#about">ABOUT US</a>
+        
+        <a href="PREMIER.HTML">SUBSCRIPTION</a>
+        <a href="#contact">CONTACT US </a>
+        <a href="registration.html">CREATE NEW ACCOUNT</a>
+        <a href="login.html">LOGIN</a>
+    </nav>
+    
+    <div id="home" class="container" style="max-width: 900px; margin: auto; text-align: justify; line-height: 1.6;">
+        <h1 style="text-align: center; font-size: 32px; font-weight: bold;">Welcome to Fraud Scam Detector</h1>
+        <h2 style="text-align: center; font-size: 28px;">Empowering You Against Digital Fraud</h2>
+        <p>
+            In today’s fast-paced digital world, scammers are constantly evolving their tactics to exploit 
+            innocent individuals and businesses. From deceptive phone calls to sophisticated cybercrimes, 
+            fraud is a growing threat. At Fraud Scam Detector, our mission is to help you 
+            recognize, prevent, and report fraudulent activities before they cause harm.
+        </p>
+        <p style="text-align: center; font-size: 18px;"><strong>Stay ahead of digital fraud and protect your identity.</strong></p>
+    
+        <h2 style="text-align: left; font-size: 26px;">Why Fraud Awareness is Important</h2>
+        
+        <h3 style="font-size: 22px;">Empowering You Against Digital Fraud</h3>
+        <p>
+            In today’s fast-paced digital world, scammers are constantly evolving their tactics to exploit 
+            innocent individuals and businesses. From deceptive phone calls to sophisticated cybercrimes, 
+            fraud is a growing threat. At <strong>Fraud Scam Detector</strong>, our mission is to help you 
+            recognize, prevent, and report fraudulent activities before they cause harm.
+        </p>
+    
+        <h3 style="font-size: 22px;">Why Fraud Awareness is Important</h3>
+        <p>
+            Fraudsters use a variety of tactics to manipulate victims, including phishing scams, identity theft, 
+            fake financial schemes, and social engineering tricks. The consequences of falling victim to fraud 
+            can be severe—financial loss, data breaches, and emotional distress. That’s why awareness is the 
+            first step toward protection.
+        </p>
+    
+        <h3 style="font-size: 22px;">What We Offer</h3>
+        <ul style="padding-left: 20px;">
+            <li><strong>Latest Scam Alerts</strong> – Stay updated on emerging fraud schemes, from banking fraud to e-commerce scams.</li>
+            <li><strong>Fraud Prevention Tips</strong> – Learn how to secure your personal and financial information.</li>
+            <li><strong>Real-Life Case Studies</strong> – Understand real-world fraud incidents and how they were tackled.</li>
+            <li><strong>Guidance on Reporting Fraud</strong> – Know how and where to report scams to prevent others from becoming victims.</li>
+        </ul>
+    
+        <h3 style="font-size: 22px;">How You Can Stay Safe</h3>
+        <ul style="padding-left: 20px;">
+            <li><strong>Never share personal details</strong> like OTPs, passwords, or banking information with unknown sources.</li>
+            <li><strong>Verify authenticity</strong> before clicking on links, making payments, or sharing confidential data.</li>
+            <li><strong>Use strong passwords</strong> and enable two-factor authentication for added security.</li>
+            <li><strong>Be cautious of too-good-to-be-true offers</strong>—scammers often lure victims with fake rewards and benefits.</li>
+        </ul>
+    
+        <p style="text-align: center; font-size: 18px;">
+            <strong>Fraud is everywhere, but knowledge is your best defense.</strong> Join us in the fight against digital deception and take control of your online security.
+        </p>
+    
+        <h3 style="text-align: center; font-size: 22px;">🔒 Stay Informed. Stay Alert. Stay Safe.</h3>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="fraud-list">
+        <center><h1>COMMON FRAUD SCAM TYPES</h1></center>
+        <div class="fraud-items">
+            <div class="fraud-item">
+                <h3>SIM Swap Fraud:</h3>
+                <img src="https://www.fraud.com/wp-content/uploads/2023/02/SIM-Swap-Fraud.jpg" alt="SIM Swap Fraud" width="350">
+                <p>Duplicate SIM using Aadhaar and OTP to access bank accounts.</p>
+                <a href="https://www.fraud.com/post/sim-swap-fraud">Read More</a>
+            </div>
+            
+            <div class="fraud-item">
+                <h3>KYC Update Scam:</h3>
+                <img src="https://labourlawadvisor.in/blog/wp-content/uploads/2023/04/Is-Your-Bank-KYC-overdue_-1.png" alt="KYC Update Scam" width="350">
+                <p>Fake calls/messages asking to update KYC, leading to identity theft.</p>
+                <a href="https://www.business-standard.com/finance/personal-finance/rs-2-lakh-kyc-update-scam-what-is-it-how-it-happened-and-how-to-avoid-it-124082800231_1.html">Read More</a>
+            </div>
+    
+            <div class="fraud-item">
+                <h3>Fake Loan Approvals:</h3>
+                <img src="https://www.iifl.com/files/iifl_insights/images/Blog_750x400_Aadhaar%20Card-01.png" alt="Fake Loan Approvals" width="350">
+                <p>Aadhaar and PAN misused for fraudulent loans.</p>
+                <a href="https://www.iifl.com/blogs/personal-loan/how-to-get-rupees-10000-loan-on-aadhaar-card">Read More</a>
+            </div>
+    
+            <div class="fraud-item">
+                <h3>Bank Account Takeover:</h3>
+                <img src="https://cdn.prod.website-files.com/5ff66329429d880392f6cba2/61691f6ef846da55ad2aaab6_Account%20Takeover.png" alt="Bank Account Takeover" width="350">
+                <p>Aadhaar, PAN, and OTP used to reset banking credentials.</p>
+                <a href="https://www.wallarm.com/what/what-is-ato-account-takeover-fraud">Read More</a>
+            </div>
+    
+            <div class="fraud-item">
+                <h3>Fraudulent e-SIM Activation:</h3>
+                <img src="https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2024/09/elon-musk-reportedly-on-the-verge-of-raising-billions-for-his-ai-company-2024-09-11t185557-1726061140.jpg" alt="Fraudulent e-SIM Activation" width="350">
+                <p>Criminals activate an e-SIM using Aadhaar details.</p>
+                <a href="https://voyeglobal.com/avoiding-esim-scams/?srsltid=AfmBOoqXJDc55ysL4CpSSRdX60LGSDIs1lGOsvW_koEBiqtMsjQlCHwI">Read More</a>
+            </div>
+    
+            <div class="fraud-item">
+                <h3>Aadhaar-Linked Payment Fraud:</h3>
+                <img src="https://lifs.co.in/images/LBS/lifs/blog/aadhaar-enabled-payment-system-scam.webp" alt="Aadhaar-Linked Payment Fraud" width="350">
+                <p>Scammers access Aadhaar-linked UPI accounts.</p>
+                <a href="https://lifs.co.in/blog/aadhaar-enabled-payment-system-scam.html">Read More</a>
+            </div>
+    
+            <div class="fraud-item">
+                <h3>Fake Government Scheme Scam:</h3>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq56yNtXC1jX2gNh7_jX0jcZGjtfR7mPbxlg&s" alt="Fake Government Scheme Scam" width="350">
+                <p>Aadhaar and PAN details collected for fake benefits.</p>
+                <a href="https://cyber.delhipolice.gov.in/Fakegovtwebsite.html#:~:text=Many%20fake%20website%20impersonating%20as,on%20the%20web%20portal.">READMORE.</a>
+            </div>
+    
+            <div class="fraud-item">
+                <h3>PAN Card-Based Credit Card Fraud:</h3>
+                <img src="https://static.toiimg.com/thumb/msid-116788506,width-400,resizemode-4/116788506.jpg" alt="PAN Card-Based Credit Card Fraud" width="350">
+                <p>Fake credit cards issued using PAN details.</p>
+                <a href="https://www.bajajfinserv.in/insurance/pan-card-fraud#:~:text=Applying%20for%20credit%20cards%20or,debts%20and%20facing%20legal%20ramifications.">READMORE.</a>
+            </div>
+    
+            <div class="fraud-item">
+                <h3>Social Media Account Takeover:</h3>
+                <img src="https://www.arkoselabs.com/wp-content/uploads/Social-Media-Account-Takeover.png" alt="Social Media Account Takeover" width="350">
+                <p>Fraudsters hijack accounts using Aadhaar and OTP phishing.</p>
+                <a href="https://www.arkoselabs.com/account-takeover/social-media-account-takeover/">READMORE.</a>
+            </div>
+    
+            <div class="fraud-item">
+                <h3>E-commerce Refund Fraud:</h3>
+                <img src="https://www.bitsight.com/sites/default/files/styles/16_9_large_2x/public/migration/images/bigstock-business-people-online-shopp-85204478_1.webp?itok=ESMi7bY3" alt="E-commerce Refund Fraud" width="350">
+                <p>Aadhaar and OTP used for online shopping fraud.</p>
+                <a href="https://www.bitsight.com/blog/how-scammers-commit-refund-fraud#:~:text=Refund%20Fraud%20%26%20Retailers&text=Refunding%20involves%20defrauding%20e%2Dcommerce,leveraging%20emotionally%20manipulative%20social%20engineering.">READMORE.</a>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <div id="about" class="container" style="max-width: 900px; margin: auto; text-align: justify; line-height: 1.6;">
+        <h2 style="text-align: center; font-size:28px;">About Us</h2>
+        <p style="font-size: 18px; text-align: justify;">
+            At <strong>Fraud Scam Detector</strong>, we help individuals and businesses recognize and combat fraud. 
+            As scams and cyber threats continue to rise, staying informed is essential. Our platform provides the 
+            tools and knowledge needed to detect, prevent, and report fraudulent activities.
+        </p>
+    
+        <h3 style="font-size:22px;">Our Mission</h3>
+        <p>
+            We aim to <strong>empower users with awareness and protection</strong> against scams. 
+            By offering timely alerts and guidance, we help people stay one step ahead of fraudsters.
+        </p>
+    
+        <h3 style="font-size:22px;">What We Do</h3>
+        <ul style="padding-left: 20px;">
+            <li><strong>Scam Alerts</strong> – Stay informed about emerging fraud tactics.</li>
+            <li><strong>Fraud Prevention Tips</strong> – Learn how to safeguard your personal and financial data.</li>
+            <li><strong>Real-Life Cases</strong> – Understand how scams work and how to avoid them.</li>
+            <li><strong>Reporting Guidance</strong> – Know where and how to report fraudulent activities.</li>
+        </ul>
+    
+        <h3 style="text-align: center;">Join the Fight Against Fraud!</h3>
+        <p style="font-size: 18px; text-align: center;">
+            Fraud can affect anyone. Whether you are protecting personal details or securing business assets, 
+            <strong>Fraud Scam Detector</strong> is here to help. Let’s work together to build a safer digital world.
+        </p>
+    
+        <h3 style="text-align: center; font-size:22px;">🔒 Stay Alert. Stay Informed. Stay Safe.</h3>
+    </div>
+    
+    <div id="reviews" class="container" style="max-width: 900px; margin: auto; text-align: justify; line-height: 1.6;">
+        <h2 style="text-align: center; font-size:28px;">What Our Users Say</h2>
+        <p style="font-size: 18px; text-align: justify;">
+            At <strong>Fraud Scam Detector</strong>, we prioritize your safety and awareness against online frauds. But don’t just take our word for it—hear from our users who have benefited from our platform.
+        </p>
+    
+        <div id="reviews" class="container" style="max-width: 900px; margin: auto; text-align: justify; line-height: 1.6;">
+            <h2 style="text-align: center; font-size:28px;">What Our Users Say</h2>
+            <p style="font-size: 18px; text-align: justify;">
+                At <strong>Fraud Scam Detector</strong>, we prioritize your safety and awareness against online fraud. But don’t just take our word for it—hear from our users who have benefited from our platform.
+            </p>
+        
+            <div style="margin-top: 20px;">
+                <h3 style="font-size:22px;">⭐⭐⭐⭐⭐ Excellent Resource for Scam Awareness</h3>
+                <p>
+                    "I almost fell for a scam call claiming to be from my bank, but thanks to <strong>Fraud Scam Detector</strong>, I recognized the red flags in time. This platform is a lifesaver!" <br>
+                    <em>- Rahul S.</em> 
+                    <a href="case-details.html?case=rahul" style="margin-left: 10px; color: blue; text-decoration: underline;">Case Details</a>
+                </p>
+                <button onclick="window.location.href='solution.html?case=rahul'" 
+                    style="background-color: #28a745; color: white; padding: 8px 12px; border: none; border-radius: 5px; cursor: pointer;">
+                    How This Application Solved My Problem
+                </button>
+            </div>
+        
+            <div style="margin-top: 20px;">
+                <h3 style="font-size:22px;">⭐⭐⭐⭐⭐ Reliable and Informative</h3>
+                <p>
+                    "Fraudsters are getting smarter, but so are we! The scam alerts and prevention tips provided here helped me protect my financial information. Highly recommended!" <br>
+                    <em>- Priya M.</em> 
+                    <a href="case-details.html?case=priya" style="margin-left: 10px; color: blue; text-decoration: underline;">Case Details</a>
+                </p>
+                <button onclick="window.location.href='solution.html?case=priya'" 
+                    style="background-color: #28a745; color: white; padding: 8px 12px; border: none; border-radius: 5px; cursor: pointer;">
+                    How This Application Solved My Problem
+                </button>
+            </div>
+        
+            <div style="margin-top: 20px;">
+                <h3 style="font-size:22px;">⭐⭐⭐⭐⭐ A Must-Have for Online Safety</h3>
+                <p>
+                    "I was able to avoid a phishing scam thanks to this site. The real-life cases are eye-opening and educational. A fantastic initiative!" <br>
+                    <em>- Karthik R.</em> 
+                    <a href="case-details.html?case=karthik" style="margin-left: 10px; color: blue; text-decoration: underline;">Case Details</a>
+                </p>
+                <button onclick="window.location.href='solution.html?case=karthik'" 
+                    style="background-color: #28a745; color: white; padding: 8px 12px; border: none; border-radius: 5px; cursor: pointer;">
+                    How This Application Solved My Problem
+                </button>
+            </div>
+        
+            <h3 style="text-align: center; font-size:22px;">🔒 Trusted by Thousands. Stay Safe with Us.</h3>
+        </div>
+        
+    
+    <section class="cta">
+        <h2>Stay Safe!</h2>
+        <p>Always verify sources, never share OTPs, and report suspicious activities.</p>
+        <section id="signup" class="container">
+          <button><a href="registration.html">Sign Up</a></button> 
+            
+        </section>
+    </section>
+</body>
+</html> 
