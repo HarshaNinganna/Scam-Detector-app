@@ -1,0 +1,307 @@
+<!Doctype html>
+
+<head lang="eng">
+    <meta charset="UTF-8">
+    <meta name=" Description " content="Contact us here ">
+    <meta name="keywords" content="content , us">
+    <meta name="view-port" content="width=device-width initial-width=1.0">
+    <meta name="author" content=" Project Group - G ">
+    <!-- <meta http-equiv="refresh" content="30"> -->
+    <title>Complete Contact Us Form</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            width: 50%;
+            margin: 50px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .container:hover {
+            transform: scale(1.02);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: 600;
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+            background: #fff;
+            transition: border-color 0.3s;
+        }
+
+        input:focus,
+        textarea:focus {
+            border-color: #6c388c;
+            outline: none;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #6c388c;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #b4a0c1;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 80%;
+                padding: 30px;
+            }
+        }
+
+        /* Unique Navbar Styles */
+        .fraud-navbar {
+            background: #222;
+            padding: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 20px;
+        }
+
+        .fraud-navbar-title {
+            color: white;
+            margin: 0;
+            padding-left: 20px;
+            font-size: 30px;
+        }
+
+        .fraud-nav-links {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .fraud-nav-links li {
+            margin: 0 15px;
+            position: relative;
+        }
+
+        .fraud-nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        .fraud-nav-links a:hover {
+            color: #6c388c;
+        }
+
+        /* Unique Dropdown Menu */
+        .fraud-dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .fraud-dropdown-content {
+            display: none;
+            position: absolute;
+            background: white;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            min-width: 200px;
+            z-index: 1;
+        }
+
+        .fraud-dropdown-content a {
+            color: black;
+            padding: 10px;
+            display: block;
+            text-decoration: none;
+        }
+
+        .fraud-dropdown-content a:hover {
+            background: #6c388c;
+            color: white;
+        }
+
+        .fraud-dropdown:hover .fraud-dropdown-content {
+            display: block;
+        }
+
+        /* Unique Login/Report Buttons */
+        .fraud-auth-buttons {
+            margin-left: auto;
+        }
+
+        .fraud-auth-buttons a {
+            display: block;
+            padding: 5px 23px;
+            background: #6c388c;
+            color: white;
+            text-decoration: none;
+            border-radius: 20px;
+            margin: 10px;
+        }
+
+        .fraud-auth-buttons a:hover {
+            background: #b4a0c1;
+        }
+
+           /* Global Styles */
+           body {
+            font-family: Arial, sans-serif;
+            background-image:url(https://static.vecteezy.com/system/resources/previews/031/734/490/non_2x/rear-view-of-a-hacker-in-a-dark-room-with-computers-and-monitors-computer-monitors-in-a-room-with-many-screens-and-monitors-on-the-wall-ai-generated-free-photo.jpg);
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            background: #333;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar h1 {
+            color: white;
+            margin: 0;
+            padding-left: 20px;
+            font-size: 24px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links li {
+            margin: 0 15px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #171716;
+        }
+
+        .blink-button {
+        padding: 10px 20px;
+        font-size: 18px;
+        color: white;
+        background-color: #f39c12;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+        0% { opacity: 1; }
+        50% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+
+    .grid-describe{
+        background-color: white;
+        display:grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    .grid-describe > div {
+        /* border: 2px solid black; */
+        padding: 9px;
+        margin: 9px;
+    }
+    
+    </style>
+</head>
+
+<body>
+
+    <div class="fraud-navbar">
+        <h1 class="fraud-navbar-title">FRAUD SCAM DETECTOR</h1>
+        <ul class="fraud-nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2078077">Fraud Awareness</a></li>
+            <li><a href="home.html">Check Scam</a></li>
+            <li><a href="#">Legal Resources</a></li>
+            <li><a href="https://indianexpress.com/about/online-fraud/">News & Updates</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="fraud-auth-buttons">
+            <a href="login.html">Login</a>
+            <a href="https://cybercrime.gov.in/webform/Crime_NodalGrivanceList.aspx" class="blink-button"
+                style="background-color:rgb(139,0,0);">Report Fraud</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Enter the subject" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Type your message here" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+    <footer>
+        <div class="grid-describe">
+            <div> Class 01 </div>
+            <div> Class 02 </div>
+            <div> Class 03 </div>
+            <div> Class 04 </div>
+            <div> Class 05 </div>
+            <div> Class 06 </div>
+            <div> Class 07 </div>
+            <div> Class 08 </div>
+            <div> Class 09 </div>
+        </div>
+    </footer>
+</body>
