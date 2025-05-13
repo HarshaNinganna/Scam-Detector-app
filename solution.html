@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How This Helped Me</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/128/6230/6230599.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0c0c0c;
+            text-align: center;
+            color: white;
+        }
+        header {
+            background: #6c388c;
+            color: white;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            text-align: justify;
+            padding: 20px;
+        }
+        .case-details {
+            background: #1a1a1a;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            background: #6c388c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button a {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>How This Helped Me</h1>
+        <p>Read real-life experiences of how users were protected from fraud.</p>
+    </header>
+    
+    <div class="container">
+        <div id="case-content" class="case-details">
+            <h2>Loading case details...</h2>
+        </div>
+    </div>
+
+    <button onclick="window.location.href='review.html'">Back to Home</button>
+
+    <script>
+        // Get the case from the URL
+        const params = new URLSearchParams(window.location.search);
+        const caseName = params.get("case");
+
+        const caseDetails = {
+    "rahul": {
+        title: "Rahul S. - Avoided a Bank Scam",
+        content: "I received a call claiming to be from my bank, asking for my OTP. Thanks to Fraud Scam Detector, I knew this was a scam. Their awareness tips saved me from losing my money!"
+    },
+    "priya": {
+        title: "Priya M. - Protected Financial Information",
+        content: "I almost fell for a fake payment link. After reading scam prevention tips on this platform, I verified the sender and avoided a financial loss!"
+    },
+    "karthik": {
+        title: "Karthik R. - Phishing Scam Prevented",
+        content: "A fake email asked me to update my bank details. I used the Fraud Scam Detector’s case studies to identify it as phishing and reported it immediately."
+    },
+    "sneha": {
+        title: "Sneha G. - Prevented an Investment Scam",
+        content: "I was about to invest in a fraudulent scheme but verified it through this platform. It saved me from a huge financial loss!"
+    },
+    "arjun": {
+        title: "Arjun K. - Alerted About Job Scams",
+        content: "A fake job offer asked me for an upfront payment. This site taught me how to spot such scams, and I avoided it!"
+    }
+};
+
+
+        // Update the page with case details
+        const caseContent = document.getElementById("case-content");
+        if (caseDetails[caseName]) {
+            caseContent.innerHTML = `<h2>${caseDetails[caseName].title}</h2><p>${caseDetails[caseName].content}</p>`;
+        } else {
+            caseContent.innerHTML = "<h2>Case not found</h2><p>Please select a valid case.</p>";
+        }
+    </script>
+</body>
+</html>
