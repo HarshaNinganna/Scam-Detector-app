@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Fraud Scam Detector</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            width: 50%;
+            margin: 50px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .container:hover {
+            transform: scale(1.02);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: 600;
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+            background: #fff;
+            transition: border-color 0.3s;
+        }
+
+        input:focus, textarea:focus {
+            border-color: #6c388c;
+            outline: none;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #6c388c;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #b4a0c1;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 80%;
+                padding: 30px;
+            }
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="fraud-navbar">
+        <h1 class="fraud-navbar-title">FRAUD SCAM DETECTOR</h1>
+        <ul class="fraud-nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2078077">Fraud Awareness</a></li>
+            <li><a href="home.html">Check Scam</a></li>
+            <li><a href="#">Legal Resources</a></li>
+            <li><a href="https://indianexpress.com/about/online-fraud/">News & Updates</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="fraud-auth-buttons">
+            <a href="login.html">Login</a>
+            <a href="https://cybercrime.gov.in/webform/Crime_NodalGrivanceList.aspx" class="blink-button" style="background-color:rgb(139,0,0);">Report Fraud</a>
+        </div>
+    </div>
+    
+    <div class="container">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Enter the subject" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Type your message here" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</body>
+</html>
