@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0c0c0c;
+            text-align: center;
+            color: white;
+        }
+        header {
+            background: #6c388c;
+            color: white;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            text-align: justify;
+            padding: 20px;
+        }
+        .case-study {
+            background: #1a1a1a;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            background: #6c388c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #6c388c;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Case details</h1>
+        <p>Real-life experiences of how Fraud Scam Detector saved users from fraud.</p>
+    </header> 
+
+    <div class="container">
+        <h1 id="case-title">Case Details</h1>
+        <p id="case-content">Loading...</p>
+        <a href="review.html" class="back-button">Back to Reviews</a>
+    </div>
+
+    <script>
+        const caseData = {
+            "rahul": {
+                title: "Rahul S. - Avoided a Bank Scam",
+                content: "Rahul received a call claiming to be from his bank, asking for an OTP. He recalled scam awareness tips from this platform and avoided the fraud."
+            },
+            "priya": {
+                title: "Priya M. - Protected Financial Information",
+                content: "Priya almost fell for a fake payment link. Thanks to Fraud Scam Detector, she verified the sender before making any transactions and prevented financial loss."
+            },
+            "karthik": {
+                title: "Karthik R. - Phishing Scam Prevented",
+                content: "Karthik received an email urging him to update his banking details. He suspected it was phishing and reported it to his bank immediately."
+            },
+            "sneha": {
+                title: "Sneha G. - Prevented an Investment Scam",
+                content: "Sneha was about to invest in a fraudulent scheme but checked its authenticity through this platform. She saved herself from a huge financial loss!"
+            },
+            "arjun": {
+                title: "Arjun K. - Alerted About Job Scams",
+                content: "Arjun received a job offer that required an upfront payment. With the help of this site, he identified it as a scam and avoided losing money."
+            }
+        };
+
+        function loadCaseDetails() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const caseId = urlParams.get("case");
+
+            if (caseData[caseId]) {
+                document.getElementById("case-title").innerText = caseData[caseId].title;
+                document.getElementById("case-content").innerText = caseData[caseId].content;
+            } else {
+                document.getElementById("case-title").innerText = "Case Not Found";
+                document.getElementById("case-content").innerText = "The case details you are looking for do not exist.";
+            }
+        }
+
+        window.onload = loadCaseDetails;
+    </script>
+</body>
+</html>
